@@ -32,4 +32,15 @@ class DateHelper
         @timeDate =  @timeDate + years.year
     end
     
+    def subDays(days)
+        @timeDate = @timeDate - days.day
+    end
+
+    def subMonths(months)
+        @timeDate =  @timeDate - months.month
+    end
+    
+    def subYears(years)
+        @timeDate =  @timeDate - years.year
+    end
 end
