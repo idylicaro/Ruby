@@ -55,4 +55,16 @@ class DateHelper
     def addSeconds(secs)
         @timeDate = @timeDate + secs
     end
+
+    def subHours(hours)
+        @timeDate = @timeDate - hours.hour
+    end
+    
+    def subMinutes(mins)
+        @timeDate = @timeDate - (mins*60)
+    end 
+    
+    def subSeconds(secs)
+        @timeDate = @timeDate - secs
+    end
 end
