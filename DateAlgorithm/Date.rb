@@ -17,7 +17,7 @@ class DateHelper
     end
     
     def displayTime
-        puts @timeDate.to_time().strftime("%k:%M")
+        puts @timeDate.to_time().strftime("%k:%M:%S")
     end
 
     def addDays(days)
@@ -42,5 +42,17 @@ class DateHelper
     
     def subYears(years)
         @timeDate =  @timeDate - years.year
+    end
+
+    def addHours(hours)
+        @timeDate = @timeDate + hours.hour
+    end
+    
+    def addMinutes(mins)
+        @timeDate = @timeDate + (mins*60)
+    end 
+    
+    def addSeconds(secs)
+        @timeDate = @timeDate + secs
     end
 end
